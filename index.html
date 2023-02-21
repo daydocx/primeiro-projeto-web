@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- or -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="estilo.css" />
+    
+    <title></title>
+  </head>
+  <body>
+    <header>
+        
+      <a href="#" class="logo"><i class="bx bx-headphone"></i>Value Sound</a>
+
+      <ul class="navegação">
+        <li><a href="#">Visão geral</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+      <!--navegação-->
+
+      <div class="header-icons">
+        <i class="bx bx-cart"></i>
+        <div id="menu"><i class="bx bx-menu"></i></div>
+      </div>
+    
+      <!--header-icons-->
+    </header>
+    <main>
+      <section class="home">
+        <div class="home-img">
+          <img src="mídias/product1.png" class="one" />
+        </div>
+        <!--home-img-->
+
+        <div class="home-text">
+          <h2>
+            Confira os nossos produtos mais vendidos <br>
+          </h2>
+          <h5>Produto de qualidade com preço acessível</h5>
+          <ul>
+            <li>Frete grátis</li>
+            <li>Garantia extendida</li>
+            
+          </ul>
+          <h3>$189.00</h3>
+          <a href="#" class="btn">Compre agora</a>
+        </div>
+        <!--home-text-->
+      </section>
+      <!--home-->
+
+      <div class="main">
+        <div class="row">
+          <li><img src="mídias/main1.png" onclick="slider('product1.pnge')" /></li>
+        </div>
+        <!--row-->
+
+        <div class="row2">
+          <li><img src="mídias/main2.png" onclick="slider('product2.png')" /></li>
+        </div>
+        <!--row2-->
+
+        <div class="row3">
+          <li><img src="mídias/main3.png" onclick="slider('product3.png')" /></li>
+        </div>
+        <!--row3-->
+      </div>
+      <!--main-->
+    </main>
+
+    <footer>
+        <div class="container-footer">
+            <div class="row-footer">
+                <!-- footer col-->
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#"> Quem somos </a></li>
+                        <li><a href=""> nossos serviços </a></li>
+                        <li><a href=""> política de privacidade </a></li>
+                        <li><a href=""> programa de afiliados</a></li>
+                    </ul>
+                </div>
+                <!--end footer col-->
+                <!-- footer col-->
+                <div class="footer-col">
+                    <h4>Obter ajuda</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Transporte</a></li>
+                        <li><a href="#">devoluções</a></li>
+                        <li><a href="#">Status De Pedido</a></li>
+                        <li><a href="#">Opções De Pagamento</a></li>
+                    </ul>
+                </div>
+                <!--end footer col-->
+                <!-- footer col-->
+                <div class="footer-col">
+                    <h4>Redes Sociais</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+
+
+                </div>
+                <!--end footer col-->
+            </div>
+        </div>
+    </footer>
+
+    <script>
+      function slider(anything) {
+        document.querySelector(".one").src = anything;
+      }
+
+      let menu = document.querySelector("#menu-icon");
+      let navbar = document.querySelector(".navbar");
+
+      menu.onclick = () => {
+        menu.classList.toggle("bx-x");
+        navbar.classList.toggle("open");
+      };
+    </script>
+  </body>
+</html>
